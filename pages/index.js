@@ -1,14 +1,18 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
-
+import Navbar from "../components/navbar"
 export default function Home() {
   return (
+    <>
+          <Navbar/>
+
     <div className={styles.container}>
+      
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css"/>
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
@@ -61,5 +65,6 @@ export default function Home() {
         </a>
       </footer>
     </div>
+    </>
   )
 }

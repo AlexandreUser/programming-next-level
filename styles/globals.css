@@ -14,3 +14,8 @@ a {
 * {
   box-sizing: border-box;
 }
+.biggerImage{
+  width: 50px;
+  min-height: 50px;
+  object-fit: cover;
+}
